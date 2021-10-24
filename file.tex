@@ -8,9 +8,6 @@
 %% Reference: http://www.ctan.org/tex-archive/info/simplified-latex/
 
 \documentclass [11pt]{article}
-\usepackage[style=authoryear]{biblatex}
-\addbibresource{annot.bib} 
-% \bibliographystyle{IEEEannot}
 
 \title{Threats and Opportunities to the Business Sector From
 Increasing Economic Protectionism.\\\medskip An Annotated Bibliography}
@@ -22,6 +19,6 @@ Lancaster University of Leipzig}
 \begin{document}
 \maketitle
 \nocite{*}
-% \bibliography{annot}
-\printbibliography
+\bibliographystyle{IEEEannot.bst}
+\bibliography{annot.bib}
 \end{document}
