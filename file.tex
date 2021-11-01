@@ -8,17 +8,66 @@
 %% Reference: http://www.ctan.org/tex-archive/info/simplified-latex/
 
 \documentclass [11pt]{article}
+\usepackage[
+    style=authoryear,
+    sorting=none
+]{biblatex}
+\usepackage{lipsum}% just to generate text for the example
+
+\addbibresource{annot.bib}
+
+
 
 \title{Threats and Opportunities to the Business Sector From
 Increasing Economic Protectionism.\\\medskip An Annotated Bibliography}
-\author{Dennis Barzanoff(d.rumenoffbarzanoff@lancaster.ac.uk)\\
-Other name(other email)\\
-Other name(other email)\\
-Lancaster University of Leipzig}
+\author{
+    \begin{tabular}{@{}llr}
+        Barzanoff   & Dennis        & d.rumenoffbarzanoff@lancaster.ac.uk\\
+        Biro        & Daniel        & d.biro@lancaster.ac.uk\\
+        Venkatesh   & Vikrant       & v.venkatesh1@lancaster.ac.uk\\
+    \end{tabular}
+}
+
+
 
 \begin{document}
 \maketitle
-\nocite{*}
-\bibliographystyle{IEEEannot.bst}
-\bibliography{annot.bib}
+
+\begin{abstract}
+Economic stability depends on many factors, one of which is trading. A country may choose to limit or free its trading
+as a way of aiding its development and economic stability. A country may choose to limit its trade in order to subsidise its local industries. 
+That is counter intuitive because in most cases more trade means more competition, which reduces prices and brings more diversity to consumers.
+On the other hand this suppresses small businesses as they can hardly compete with already-established ones directly, putting small industies at a
+disadvantage.
+\end{abstract}
+
+\section{Journal}
+
+The author argues that despite the fact that free trade increases the economy of a country, it is not necessarily 
+beneficial for the people, because in some cases it leads to job destruction and migrations. In the newspaper article there are manifold examples 
+concerning the impact of free trade on most developing African countries and, more specifically, the consequences of reducing government support for 
+infant industries. \textcite{2018TIGP} claims that job destruction, unemployment and migration are among some of the repercussions that follow when a
+country is to remove tariff barriers and other methods of protection for small businesses. 
+\parencite[][p.5]{2018TIGP}
+
+
+One noble example is Botswana. It used to have a flourishing diamond industry, but it was hampered by the free market and has become a predominantly export-oriented industry due to
+the decrease in cost caused by free trading. This has led to the imminent destruction of many skillful jobs that require time to create. 
+The newspaper also compares recent actions concerning the USA and the rules enforced by the right-winged political party and suggests that if America is to open its economy and remove the
+tarrifs, it risks having the same grim faith as the African market. 
+\parencite[][p.6]{2018TIGP}
+
+\section{Book}
+
+\lipsum[1-2]
+
+\section{Magazine}
+
+\lipsum[3-4]
+
+\section*{Conclusion}
+Enforcing the correct measures to help economical growth is not always obvious. Reliance on other economies and independence coexist in a delicate balance that ultimately leads to economic stability. 
+Free trade spawns some temporary growth, but that comes with a cost that is hard to recover from.
+\printbibliography
+
 \end{document}
